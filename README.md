@@ -30,4 +30,9 @@ To start your own React application based on this:
 ## Todo Example
 
 This isn't the usual TodoMVC style application. It's very very stripped down so
-that there's the minimal amount of code to read to grok it.
+that there's the minimal amount of code to read to grok it. You can get it like so:
+
+    git clone -b todo https://github.com/SirCmpwn/react-starter-kit.git
+    cd react-starter-kit
+    npm install
+    npm start # run dev server
