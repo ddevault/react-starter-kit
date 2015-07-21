@@ -21,8 +21,6 @@ rm bootstrap.sh
 git add -A
 git commit -m "Bootstrap react starter kit into $package_name"
 
-echo "Okay, you're good to go."
-
 echo -n "Do you want to push (y/n)? "
 read do_push
 
@@ -30,3 +28,9 @@ if [ "$do_push" == "y" ]
 then
     git push -u origin master
 fi
+
+echo "Last step: going to set up your local environment."
+
+npm install
+
+echo "Okay, you're good. Run `npm start` to see this in your browser."
