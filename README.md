@@ -12,9 +12,10 @@ Branches:
 
 To start your own React application based on this:
 
-    git clone https://github.com/SirCmpwn/react-starter-kit.git
+    git clone -b master https://github.com/SirCmpwn/react-starter-kit.git
     mv react-starter-kit my-awesome-app
     cd my-awesome-app
+    ./bootstrap.sh
 
 ## What you get
 
