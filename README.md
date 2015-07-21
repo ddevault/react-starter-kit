@@ -8,7 +8,7 @@ React and Flux more quickly.
 Branches:
 
 * [`master`](https://github.com/SirCmpwn/react-starter-kit/tree/master) - empty starter kit
-* [`todo`](https://github.com/SirCmpwn/react-starter-kit/tree/todo) - simple TODO list example (you are here)
+* [`todo`](https://github.com/SirCmpwn/react-starter-kit/tree/todo) - simple Todo list example (you are here)
 
 To start your own React application based on this:
 
@@ -26,3 +26,8 @@ To start your own React application based on this:
     * Underscore
 * A base Store class
 * An entry point
+
+## Todo Example
+
+This isn't the usual TodoMVC style application. It's very very stripped down so
+that there's the minimal amount of code to read to grok it.
