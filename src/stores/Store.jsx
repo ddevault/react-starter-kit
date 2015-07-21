@@ -5,12 +5,12 @@ export class Store {
     constructor(name) {
         this.storeName = name;
         this.subscribers = [];
-        this.actions = {};
+        this.handlers = {};
 
         this.subscribe = this.subscribe.bind(this);
         this.unsubscribe = this.unsubscribe.bind(this);
         this.notify = this.notify.bind(this);
-        this.action = this.action.bind(this);
+        this.handle = this.handle.bind(this);
         this.handleAction = this.handleAction.bind(this);
 
         this.dispatchToken = Dispatcher.register(this.handleAction);
@@ -37,6 +37,11 @@ export class Store {
         if (_.isFunction(handler)) {
             handler(action);
         }
+    }
+
+    dispatch(action, payload) {
+        payload.action = action;
+        Dispatcher.dispatch(payload);
     }
     
     static get(url) {
