@@ -1,0 +1,19 @@
+{
+    "todos": [
+        {
+            "id": 1,
+            "title": "Download starter kit",
+            "done": true
+        },
+        {
+            "id": 2,
+            "title": "Read the source code",
+            "done": false
+        },
+        {
+            "id": 3,
+            "title": "Create your own project",
+            "done": false
+        }
+    ]
+}
